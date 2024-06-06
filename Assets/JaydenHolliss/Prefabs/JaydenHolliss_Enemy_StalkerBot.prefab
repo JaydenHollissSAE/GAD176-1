@@ -66,8 +66,9 @@ GameObject:
   - component: {fileID: 6449686686394465367}
   - component: {fileID: 9167665889835871541}
   - component: {fileID: 1614318205656627459}
+  - component: {fileID: 791042513513863094}
   m_Layer: 0
-  m_Name: SAE_Enemy_HoverBot
+  m_Name: JaydenHolliss_Enemy_StalkerBot
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -268,6 +269,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &791042513513863094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015434656898269652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b1d7348f025024caaac5f521950bbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2201913640410082181
 GameObject:
   m_ObjectHideFlags: 0
