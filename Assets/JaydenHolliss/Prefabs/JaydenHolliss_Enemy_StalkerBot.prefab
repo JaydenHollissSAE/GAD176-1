@@ -68,7 +68,7 @@ GameObject:
   - component: {fileID: 1614318205656627459}
   - component: {fileID: 791042513513863094}
   m_Layer: 0
-  m_Name: SAE_Enemy_HoverBot
+  m_Name: JaydenHolliss_Enemy_StalkerBot
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
