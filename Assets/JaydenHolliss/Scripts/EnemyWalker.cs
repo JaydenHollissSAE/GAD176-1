@@ -21,5 +21,7 @@ public class EnemyWalker : SimpleBaseEnemy
         {
             transform.position = Vector3.MoveTowards(transform.position, playerObject.transform.position, Time.deltaTime * 5.5f);
         }
+
+
     }
 }
