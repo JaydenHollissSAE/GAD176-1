@@ -20,7 +20,11 @@ public class EnemyWalker : SimpleBaseEnemy
         if (distance < 15.0f)
         {
             transform.position = Vector3.MoveTowards(transform.position, playerObject.transform.position, Time.deltaTime * 5.5f);
+            //transform.rotation = Quaternion.RotateTowards(transform.rotation, playerObject.transform.position, Time.deltaTime * 5.5f);
+            transform.LookAt(playerObject.transform.position);
         }
+
+        //Debug.Log(playerObject.transform.rotation);
 
 
     }
