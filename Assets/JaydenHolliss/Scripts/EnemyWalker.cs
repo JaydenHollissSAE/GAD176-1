@@ -1,10 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.FPS.Game;
 using UnityEngine;
 
 public class EnemyWalker : SimpleBaseEnemy
 {
     private GameObject playerObject;
+
+    [SerializeField] float damage = 10.0f;
+    bool damageBuffer = false;
+
 
     // Start is called before the first frame update
     private void Start()
@@ -26,6 +31,19 @@ public class EnemyWalker : SimpleBaseEnemy
 
         //Debug.Log(playerObject.transform.rotation);
 
+        //Artifical Collision and Damage
+        if (distance < 1.0f && !damageBuffer)
+        {
+            playerObject.GetComponent<Health>().TakeDamage(damage, gameObject);
+            StartCoroutine(DamagePause());
+        }
 
+    }
+
+    private IEnumerator DamagePause()
+    {
+        damageBuffer = true;
+        yield return new WaitForSeconds(0.8f);
+        damageBuffer = false;
     }
 }
