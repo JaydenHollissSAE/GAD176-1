@@ -6,15 +6,23 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] float roomPos;
     [SerializeField] float varyDistance;
+    private Vector3 spawnPos;
     private int spawnAmount;
-    private int spawnCount;
-    private List<Vector3> playerSpawnPos = new List<Vector3>();
-    // Start is called before the first frame update
+    [SerializeField] List<GameObject> enemyList = new List<GameObject>();
+    [SerializeField] int maxEnemies;
+    [SerializeField] int minEnemies;
 
-
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+
+
+        spawnAmount = Random.Range(minEnemies, maxEnemies);
+        for (int i = 0; i < spawnAmount; i++)
+        {
+            spawnPos = new Vector3(roomPos+Random.Range(1f, varyDistance), 0f,roomPos + Random.Range(1f, varyDistance)); //Gets a new random position for the coin to spawn on the map.
+            Instantiate(enemyList[Random.Range(0,enemyList.Count)], spawnPos, Quaternion.identity);
+            Debug.Log("Enemy Spawned");
+        }
     }
+
 }
