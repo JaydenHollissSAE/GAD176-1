@@ -6,7 +6,7 @@ using UnityEngine;
 public class EnemyBomb : EnemyWalker
 {
     private GameObject playerObject;
-    private Damageable damageable;
+    [SerializeField] GameObject ExplodeEffect;
 
     [SerializeField] float deathDamage = 15.0f;
     Vector3 largePopScale = new Vector3(12.0f, 12.0f, 12.0f);
@@ -27,11 +27,11 @@ public class EnemyBomb : EnemyWalker
         if (distance < 1.0f && !death)
         {
             //Debug.Log("Distance Reached");
-            StartCoroutine(BombExpload());
+            StartCoroutine(BombExplode());
         }
 
     }
-    private IEnumerator BombExpload()
+    private IEnumerator BombExplode()
     {
         death = true;
         //Debug.Log("Begin Death");
@@ -42,6 +42,7 @@ public class EnemyBomb : EnemyWalker
         playerObject.GetComponent<Health>().TakeDamage(deathDamage, gameObject);
         yield return new WaitForSeconds(0.1f);
         gameObject.GetComponent<Health>().TakeDamage(100f, gameObject);
+        Instantiate(ExplodeEffect, transform.position, Quaternion.identity);
     }
 
 }

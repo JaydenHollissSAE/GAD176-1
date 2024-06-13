@@ -5950,7 +5950,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -6085,8 +6085,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c41f7b38ba49649a58e29d5fafdc09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyManager: {fileID: 0}
   damage: 10
-  damage: 20
+  ExplodeEffect: {fileID: 2882817066849757242, guid: bccbe2f1ab03fec42a39a20c2b73a625,
+    type: 3}
+  deathDamage: 40
   death: 0
 --- !u!114 &1741018979159169932
 MonoBehaviour:
@@ -6100,6 +6103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b1d7348f025024caaac5f521950bbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyManager: {fileID: 0}
   damage: 1
 --- !u!114 &9010684492889244033
 MonoBehaviour:
@@ -6113,6 +6117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd30d40bcd6277f4e84d063870acf9d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyManager: {fileID: 0}
 --- !u!1 &2201913640410082181
 GameObject:
   m_ObjectHideFlags: 0
