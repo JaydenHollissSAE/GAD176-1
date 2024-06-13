@@ -6,6 +6,7 @@ using UnityEngine;
 public class EnemyBomb : EnemyWalker
 {
     private GameObject playerObject;
+    private Damageable damageable;
 
     [SerializeField] float deathDamage = 15.0f;
     Vector3 largePopScale = new Vector3(12.0f, 12.0f, 12.0f);
@@ -40,7 +41,7 @@ public class EnemyBomb : EnemyWalker
         //yield return new WaitForSeconds(1.0f);
         playerObject.GetComponent<Health>().TakeDamage(deathDamage, gameObject);
         yield return new WaitForSeconds(0.1f);
-        Destroy(this.gameObject);
+        gameObject.GetComponent<Health>().TakeDamage(100f, gameObject);
     }
 
 }
