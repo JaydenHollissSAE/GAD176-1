@@ -22,9 +22,9 @@ public class EnemySpawner : MonoBehaviour
         {
 
             xSide = Random.Range(0, 100);
-            Debug.Log("xSide");
+            //Debug.Log("xSide");
             zSide = Random.Range(0, 100);
-            Debug.Log("zSide");
+            //Debug.Log("zSide");
             if (zSide < 50)
             {
                 zSide = -1;
