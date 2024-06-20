@@ -645,6 +645,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f3c7103d29722b4d9e93ef5f494b9e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnX:
+  - 6
+  - -25.53
+  - 24.37
+  - 58.72
+  spawnY:
+  - -19
+  - -19.664
+  - -21.7
+  - -27.88
+  spawnZ:
+  - 9
+  - 2
+  - 8.24
+  - 25.24
 --- !u!1 &8966235824226123989
 GameObject:
   m_ObjectHideFlags: 0
