@@ -1,0 +1,39 @@
+*   d70a131 (HEAD -> main, origin/main, origin/HEAD) Merge pull request #6 from JaydenHollissSAE/develop
+|\  
+| * 7e27be1 (origin/develop, develop) Moved scene to proper location
+| * 7c53455 Added Null check for Player Object
+| * 733016d Set Walker damager to protect function
+| * 0f9d4a9 Code comments
+| | * b39c752 (origin/feature-stalkerspawner, feature-stalkerspawner) Feature doesn't work, shelved
+| |/  
+| *   53af048 Merge pull request #5 from JaydenHollissSAE/feature-playerspawnfixes
+| |\  
+| | * fdaf6c0 (origin/feature-playerspawnfixes, feature-playerspawnfixes) Tweaked declaration of spawn location
+| |/  
+| *   c571092 Merge pull request #4 from JaydenHollissSAE/feature-enemyspawning
+| |\  
+| | * 1f70ea9 (origin/feature-enemyspawning, feature-enemyspawning) Fixed Enemy Spawn locations
+| | * 9f3f5b4 Added Enemy Spawner
+| | * 9b1b61c Added Player Spawning Mechanics
+| |/  
+| *   0e304c9 Merge pull request #3 from JaydenHollissSAE/feature-bombrunnerbot
+| |\  
+| | * 1e54e3d (origin/feature-bombrunnerbot, feature-bombrunnerbot) Added Bomb Explode Effect
+| | * df6cfb4 Fixed Death
+| | * e2d14d2 Added Bomb Runner Enemy with bomb functionality
+| |/  
+| *   29a0083 Merge pull request #2 from JaydenHollissSAE/feature-worldloader
+| |\  
+| | * c0edbce (origin/feature-worldloader, feature-worldloader) World Loader Implemented
+| |/  
+| * 982a04d Merge pull request #1 from JaydenHollissSAE/feature-stalkerbot
+|/| 
+| * 3a276c6 (origin/feature-stalkerbot, feature-stalkerbot) Added Stalker Bot 'Collision' Damage
+| * ec5bc03 Renamed Stalker Bot
+| * 3e26993 Added Stalker Rotation
+| * 62d3e18 Fixed stalker collision bug. Moved around folders
+| * 494d1e5 Stalker Tracking Added
+|/  
+* e95fda0 Fixed input system
+* 1fff22c Added Unity starting point package
+* 75bc73f Initial Commit of environment
