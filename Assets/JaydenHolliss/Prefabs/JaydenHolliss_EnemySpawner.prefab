@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1262681687679903191
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6642910217577961898}
+  - component: {fileID: 6168060174649206720}
+  m_Layer: 0
+  m_Name: JaydenHolliss_EnemySpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6642910217577961898
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262681687679903191}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 42.83968, y: -586.98, z: 571.24146}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6168060174649206720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262681687679903191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e27b044958180614d95e0ecd56bb2cef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomPos: 0
+  varyDistance: 0
+  enemyList:
+  - {fileID: 2015434656898269652, guid: 535831934816544478ed68e808f075c3, type: 3}
+  - {fileID: 2015434656898269652, guid: b55c908d019dd2849ab082639800212c, type: 3}
+  - {fileID: 2015434656898269652, guid: d6d373c3f90bb5d459bb3ff32af91e41, type: 3}
+  maxEnemies: 5
+  minEnemies: 1
