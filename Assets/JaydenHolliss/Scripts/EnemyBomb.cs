@@ -17,7 +17,10 @@ public class EnemyBomb : EnemyWalker
     // Start is called before the first frame update
     private void Start()
     {
-        playerObject = GameObject.FindGameObjectWithTag("Player"); //Gets the player's object based on the Player tag.
+        if (playerObject == null) //Checks if playerObject is connected to anything.
+        {
+            playerObject = GameObject.FindGameObjectWithTag("Player"); //Gets the player's object based on the Player tag.
+        }
     }
 
     // Update is called once per frame

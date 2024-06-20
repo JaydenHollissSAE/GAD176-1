@@ -13,7 +13,10 @@ public class EnemyWalker : SimpleBaseEnemy
 
     private void Start()
     {
-        playerObject = GameObject.FindGameObjectWithTag("Player"); //Finds the player's object based on the Player tag.
+        if (playerObject == null) //Checks if playerObject is connected to anything.
+        {
+            playerObject = GameObject.FindGameObjectWithTag("Player"); //Finds the player's object based on the Player tag.
+        }
     }
 
     // Update is called once per frame
