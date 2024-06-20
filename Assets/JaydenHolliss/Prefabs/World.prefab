@@ -1305,12 +1305,17 @@ PrefabInstance:
     - target: {fileID: 6168060174649206720, guid: 0e0fc6b89fed1c142be14d5d307c48d3,
         type: 3}
       propertyPath: maxEnemies
-      value: 11
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6168060174649206720, guid: 0e0fc6b89fed1c142be14d5d307c48d3,
+        type: 3}
+      propertyPath: minEnemies
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6168060174649206720, guid: 0e0fc6b89fed1c142be14d5d307c48d3,
         type: 3}
       propertyPath: varyDistance
-      value: 2.22
+      value: 7.5
       objectReference: {fileID: 0}
     - target: {fileID: 6642910217577961898, guid: 0e0fc6b89fed1c142be14d5d307c48d3,
         type: 3}
@@ -2027,6 +2032,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: JaydenHolliss_EnemySpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 6168060174649206720, guid: 0e0fc6b89fed1c142be14d5d307c48d3,
+        type: 3}
+      propertyPath: maxEnemies
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6168060174649206720, guid: 0e0fc6b89fed1c142be14d5d307c48d3,
+        type: 3}
+      propertyPath: minEnemies
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6168060174649206720, guid: 0e0fc6b89fed1c142be14d5d307c48d3,
         type: 3}
@@ -3029,7 +3044,7 @@ PrefabInstance:
     - target: {fileID: 6168060174649206720, guid: 0e0fc6b89fed1c142be14d5d307c48d3,
         type: 3}
       propertyPath: maxEnemies
-      value: 43
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6168060174649206720, guid: 0e0fc6b89fed1c142be14d5d307c48d3,
         type: 3}
