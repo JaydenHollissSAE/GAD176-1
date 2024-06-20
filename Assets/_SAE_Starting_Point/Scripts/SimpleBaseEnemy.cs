@@ -5,7 +5,7 @@ using UnityEngine;
 public class SimpleBaseEnemy : MonoBehaviour
 {
     private Health myHealth;
-    private EnemyManager enemyManager;
+    public EnemyManager enemyManager;
 
     // Start is called before the first frame update
     protected virtual void Start()
