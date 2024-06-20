@@ -17,34 +17,38 @@ public class EnemySpawner : MonoBehaviour
     {
 
 
-        spawnAmount = Random.Range(minEnemies, maxEnemies);
-        for (int i = 0; i < spawnAmount; i++)
+        spawnAmount = Random.Range(minEnemies, maxEnemies); //Gets a random variable based on the minEnemies and maxEnemies variables to determine the amount of enemies that will be spawned.
+        for (int i = 0; i < spawnAmount; i++) //Performs a loop while i is smaller than spawnAmount.
         {
 
-            xSide = Random.Range(0, 100);
-            //Debug.Log("xSide");
-            zSide = Random.Range(0, 100);
-            //Debug.Log("zSide");
-            if (zSide < 50)
+            /// <summary>
+            /// Unity random didn't give nice numbers for variables from -1 to 1 so a larger range is used to help determine it.
+            /// </summary>
+
+            xSide = Random.Range(0, 100); //Sets xSide to a random number from 0 to 100.
+            //Debug.Log("xSide"); //Prints a message to the console for debugging.
+            zSide = Random.Range(0, 100); //Sets zSide to a random number from 0 to 100.
+            //Debug.Log("zSide"); //Prints a message to the console for debugging.
+            if (zSide < 50) //Checks if zSide is below 50.
             {
-                zSide = -1;
+                zSide = -1; //Sets zSide to -1.
             }
-            else
+            else //If zSide was 50 or above.
             {
-                zSide = 1;
+                zSide = 1; //Sets zSide to 1.
             }
-            if (xSide < 50)
+            if (xSide < 50) //Checks if xSide is below 50.
             {
-                xSide = -1;
+                xSide = -1; //Sets xSide to -1.
             }
-            else
+            else //If xSide was 50 or above.
             {
-                xSide = 1;
+                xSide = 1; //Sets xSide to 1.
             }
-            //Debug.Log("xSide is: "+xSide+" zSide is: "+zSide);
-            spawnPos = new Vector3(transform.position.x+(Random.Range(1f, varyDistance))*xSide, transform.position.y, transform.position.z + (Random.Range(1f, varyDistance))*zSide); //Gets a new random position for the coin to spawn on the map.
-            Instantiate(enemyList[Random.Range(0,enemyList.Count)], spawnPos, Quaternion.identity);
-            //Debug.Log("Enemy Spawned at: "+spawnPos);
+            //Debug.Log("xSide is: "+xSide+" zSide is: "+zSide); //Prints xSide and zSide to the console for debugging.
+            spawnPos = new Vector3(transform.position.x+(Random.Range(1f, varyDistance))*xSide, transform.position.y, transform.position.z + (Random.Range(1f, varyDistance))*zSide); //Gets a random position determined by the spawner's position, zSide, xSide, and varyDistance to give a unique spawning position that goes across a large range within a square.
+            Instantiate(enemyList[Random.Range(0,enemyList.Count)], spawnPos, Quaternion.identity); //Spawns a random enemy from enemyList based on the random position.
+            //Debug.Log("Enemy Spawned at: "+spawnPos); //Prints the spawn position to the console for debugging.
         }
     }
 

@@ -9,13 +9,13 @@ public class BombExplode : MonoBehaviour
     void Start()
     {
 
-        StartCoroutine(BombExplodeFunc()); //Runs the DelayDelete function.
+        StartCoroutine(BombExplodeFunc()); //Runs the BombExplodeFunc function to manage the effect.
     }
 
 
     IEnumerator BombExplodeFunc()
     {
-        yield return new WaitForSeconds(0.5f); //Waits 1 second.
-        Destroy(this.gameObject); //Removes the pop effect from the scene.
+        yield return new WaitForSeconds(0.5f); //Waits 0.5 seconds.
+        Destroy(this.gameObject); //Removes the effect from the scene.
     }
 }
