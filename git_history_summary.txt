@@ -1,6 +1,13 @@
-*   d70a131 (HEAD -> main, origin/main, origin/HEAD) Merge pull request #6 from JaydenHollissSAE/develop
+*   efbd98f (HEAD -> main, origin/main, origin/HEAD) Merge pull request #8 from JaydenHollissSAE/develop
 |\  
-| * 7e27be1 (origin/develop, develop) Moved scene to proper location
+| *   c850334 (origin/develop, develop) Merge pull request #7 from JaydenHollissSAE/feature-damagereactions
+| |\  
+| | * dc805e9 (origin/feature-damagereactions, feature-damagereactions) Added damage reactions to enemies
+| |/  
+* | 4e68097 Git Summary
+* | d70a131 Merge pull request #6 from JaydenHollissSAE/develop
+|\| 
+| * 7e27be1 Moved scene to proper location
 | * 7c53455 Added Null check for Player Object
 | * 733016d Set Walker damager to protect function
 | * 0f9d4a9 Code comments
